@@ -4,6 +4,7 @@ body{
     padding: 0;
     display: grid;
     height: 100vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     background-color: hsl(217, 54%, 11%);
@@ -93,12 +94,26 @@ p span:hover{
     display: grid;
     justify-content: center;
     position:absolute;
-    top: 15%;
+    margin-top: -305px;
     border-radius: 1rem;
-    height: 305px;
+    height: 300px;
     opacity: 0;
 }
 #viewdiv:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+@media (max-width:350px){
+    .main{
+        width:80%;
+        align-items: center;
+        margin-left: 12px;
+        margin-top: 10px;
+    }
+    #viewdiv{
+        width: 80%;
+        height: 255px;
+        margin-top: -260px;
+    }
 }
